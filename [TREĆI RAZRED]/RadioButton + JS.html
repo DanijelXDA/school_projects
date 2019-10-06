@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RadioButton + JS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <style>
+         body  {
+         background-image: linear-gradient(to right, #0d609a, #0055a5, #0048ac, #1136ae, #4016a9);
+         }
+      </style>
+      <script>
+         function odvedi() {
+         	if (document.getElementById('fb').checked)
+         		window.open("https://facebook.com");
+         	else if(document.getElementById('google').checked)
+         		window.open("https://google.com");
+         		else if(document.getElementById('insta').checked)
+         		window.open("https://instagram.com");
+         	else 
+         		window.alert("Odaberite jednu opciju!");
+         }
+          
+      </script>
+   </head>
+   <body>
+      <section>
+         <div class="container pt-5 mt-5 text-center">
+            <h1 class="text-white">Zadatak - RadioButton + JS</h1>
+            <h6 class="text-white">Odabirom na opciju i klikom na dugme odlazite na Vaš omiljeni web sajt</h6>
+            <br/><br/>
+            <h4 class="text-white pb-4">Odaberi opciju:</h4>
+            <div class="radio">
+               <h5 class="text-white"><input type="radio" name="optradio" id="fb"> Idi na Facebook</h5>
+            </div>
+            <div class="radio">
+               <h5 class="text-white"><input type="radio" name="optradio" id="google"> Idi na Google</h5>
+            </div>
+            <div class="radio">
+               <h5 class="text-white"><input type="radio" name="optradio" id="insta"> Idi na Instagram</h5>
+            </div>
+            <br/>
+            <button class="btn btn-primary" style="font-size : 20px;" onclick="odvedi();">Odvedi me</button>
+         </div>
+      </section>
+   </body>
+</html>
