@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DJ</title>
+		<style>
+			body {
+				background-color: #570527;
+				margin-top: 250px;
+				margin-left: 25%;	
+			}
+			
+			.cursor-box {
+				width: 186px;
+				height: 186px;
+				position: relative;
+				border-radius: 12px;
+				background: #881238;
+				box-shadow: 0px 4px 12px rgba(105, 6, 38, 0.25);
+				display: inline-block;
+				margin-left: 24px;
+				transition: 200ms ease;
+			}
+			
+			.cursor-box:hover {
+				background-color: #BC144A;
+			}
+			
+			.cursor-box:first-of-type {
+				margin-left: 0px;
+			}
+			
+			.cursor-box p {
+				width: 100%;
+				text-align: center;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				line-height: 186px;
+				color: white;
+				point-events: none;
+				font-size: 20px;
+			}
+			
+			#poker-face {
+				cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/meh.png"), auto;
+			}
+			
+			#happy-face {
+				cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+			}
+			
+			#sad-face {
+				cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png"), auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="happy-face" class="cursor-box">
+			<p>Happy</p>
+		</div>
+		
+		<div id="sad-face" class="cursor-box">
+			<p>Sad</p>
+		</div>
+		
+		<div id="poker-face" class="cursor-box">
+			<p>Poker face</p>
+		</div>
+	</body>
+</html>
